@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate Auction Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- Information Card -->
+    <div class="card" id="businessCard">
+
+      <!-- Header -->
+      <div class="card-header">
+        <div class="avatar">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Platform Logo"
+            id="avatarImg"
+          />
+        </div>
+
+        <div class="header-info">
+          <h1 id="userName">Real Estate Auction Platform</h1>
+          <p class="title" id="userTitle">
+            Online system for property and construction auctions
+          </p>
+          <p class="location" id="userLocation">
+            📍 Digital Platform · Colombia
+          </p>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="card-section">
+        <h2>About the Platform</h2>
+        <p id="userBio" class="bio">
+          Interactive web application that allows users to explore properties
+          available for auction, view their characteristics, and analyze
+          real estate market statistics.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="card-section">
+        <h2>Contact Information</h2>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon">📧</span>
+            <span id="userEmail">support@realestateauctions.com</span>
+            <button id="copyEmailBtn" class="btn btn-small">Copy</button>
+          </div>
+
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <span id="userPhone">+57 300 000 0000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Properties -->
+      <div class="card-section">
+        <h2>Property Categories</h2>
+
+        <div id="skillsList" class="skills-list">
+          <!-- Dynamic content from JS -->
+        </div>
+
+        <button id="toggleSkills" class="btn btn-secondary">
+          Show More
+        </button>
+      </div>
+
+      <!-- Links -->
+      <div class="card-section">
+        <h2>Connect</h2>
+        <div id="socialLinks" class="social-links">
+          <!-- Dynamic content from JS -->
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <div class="card-section">
+        <h2>Platform Statistics</h2>
+        <div id="stats" class="stats-grid">
+          <!-- Dynamic content from JS -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built with ❤️ using ES2023 JavaScript</p>
+      <p class="small">Week 01 Project – JavaScript Modern Bootcamp</p>
+    </footer>
+
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    <span id="toastMessage"></span>
+  </div>
+
+  <script src="starter/script.js"></script>
+</body>
+</html>
