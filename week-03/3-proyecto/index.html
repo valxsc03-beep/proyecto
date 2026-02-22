@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real Estate Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Real Estate Management System</h1>
+    <div id="stats"></div>
+  </header>
+
+  <section class="form-section">
+    <h2>Add Property</h2>
+
+    <form id="propertyForm">
+      <input type="text" id="name" placeholder="Property Name" required>
+      <input type="text" id="location" placeholder="Location" required>
+      <input type="number" id="price" placeholder="Price" required>
+
+      <select id="type">
+        <option value="House">House</option>
+        <option value="Apartment">Apartment</option>
+        <option value="CommercialProperty">Commercial Property</option>
+      </select>
+
+      <button type="submit">Add Property</button>
+    </form>
+  </section>
+
+  <section class="filters">
+    <input type="text" id="searchInput" placeholder="Search by name...">
+    <select id="filterType">
+      <option value="All">All Types</option>
+      <option value="House">House</option>
+      <option value="Apartment">Apartment</option>
+      <option value="CommercialProperty">Commercial</option>
+    </select>
+  </section>
+
+  <section>
+    <h2>Property List</h2>
+    <div id="propertyList"></div>
+  </section>
+
+  <script src="starter/script.js"></script>
+</body>
+</html>
